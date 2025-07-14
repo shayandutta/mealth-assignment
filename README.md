@@ -71,7 +71,3 @@ Once the servers are running, open the application in your browser at `http://lo
 -   **Frontend**: React
 -   **Styling**: Tailwind CSS
 -   **Build Tools**: Vite
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
