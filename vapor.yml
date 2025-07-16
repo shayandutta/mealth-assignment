@@ -1,0 +1,13 @@
+name: health-assignment
+environments:
+  production:
+    memory: 512
+    runtime: 'php-8.2'
+    build:
+      - 'npm ci'
+      - 'npm run build'
+      - 'php artisan event:cache'
+    deploy:
+      - 'php artisan migrate --force'
+    files:
+      - database/database.sqlite
